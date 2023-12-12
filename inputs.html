@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png"  href="src/favicon/favicon.ico">
+        <link rel="stylesheet" href="conexao-style.css">
+        <title>Entrada de dados</title>  
+    </head>
+    <body>
+        <ul id="menu">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="links.html">Links</a></li>
+            <li class="item"><a href="inputs.html">Formulário</a></li>  
+            <li class="item"><a href="listastabela.html">Listas e Tabelas</a></li>
+            <li class="item"><a href="linhas-e-paragrafos.html">Linhas e Parágrafos</a></li>
+            <li class="item"><a href="conexao.html">Conexao CSS</a></li>
+            <li class="item"><a href="java.html">Java Script</a></li>
+            <li class="item"><a href="sobre.html">Sobre</a></li>
+        </ul>
+        <center>
+            <h1>Formulários e Entrada de Dados</h1>
+            <br>
+            <img src="src/imagens/formulario.png" alt="imagem de formulario" width="600" height="400">
+            <p>
+                Os formulários em html são representados pela tag <b>input</b>, ela possui diferentes entradas de dados: texto, numero, e-mail, genero senha entre outros.
+                <br>
+                <u>Toda vez que criamos um tag input ela cria uma caixa de entrada</u>
+                <br>
+                <br>
+                <input type="text" placeholder="Este e um exemplo de caixa de entrada" name="Cx_exemplo">
+                <br>
+                <br>
+                a tag input ela tem os seguintes parâmetros: <b>type</b> , para indicar tipo de informaçao que será inserida(text,passoword,checkbox, radio number, e-mail) bem como o campo de <b>placeholder</b>, é como se fosse um dica para o úsuario de qual informaçao precisa ser inserida ali, após clicar no campo esse texto desaparecer
+            </p>
+            <h3>Caixa de entrada e tipos de dados</h3>
+            <p>
+                Caixa de entrada para texto:
+                <br>
+                <br>
+                <input type="text"placeholder='Digite seu nome' name="cx_nome">  
+                <br>
+                <br>
+            </p>
+            <p>
+                Caixa de entrada para senhas:
+                <br>
+                <br>
+                <input type="password"placeholder='Digite sua senha' name="cx_senha">  
+                <br>
+                <br>
+            </p>
+            <p>
+                Caixa de entrada do tipo checkbox:
+                <br>
+                <br>
+                <label><input type="checkbox" value="sim" name="cx_check_sim"> Sim </label> 
+                <label><input type="checkbox" value="sim" name="cx_check_não"> Não</label>
+                <label><input type="checkbox" value="sim" name="cx_check_talvez"> Talvez </label>
+                <br>
+                <br>
+            </p>
+            <p>
+                Caixa de entrada do tipo Radio:
+                Para que o usúario tenha de escolher somente uma opção as caixas de entrada das opções do tipo radio deverão ter o mesmo name.
+                <br>
+                <br>
+                <label><input type="radio" value="sim" name="cx_radio"> Sim </label> 
+                <label><input type="radio" value="sim" name="cx_radio"> Não</label>
+                <label><input type="radio" value="sim" name="cx_radio"> Talvez </label>
+                <br>
+                <br>
+            </p>
+            <p>
+                Caixa de entrada para Numeros:
+                <br>
+                <br>
+                <input type="number"placeholder='digite seu CPF' name="cx_CPF">  
+                <br>
+                <br>
+            </p>
+            <p>
+                Caixa de entrada pra e-mail:Para que voce "force" o usúario a digitar a informação de email antes de clicar em enviar coloque o atributo required ao final. <br>Também poderá criar uma input, uma entrada de dados para enviar a informação, essa entrada terá como type submit
+                <br>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Enviar" id="btn_enviar">
+            </p>
+            <p style="margin-bottom: 0px;border-radius: 10px 10px 0px 0px;">
+                Caixa de entrada para upload de arquivos
+            </p>    
+                <form action="https://drive.google.com/drive/folders/1IxWvDLgfYfrlim_J30xZ1umrkwyzYd9v" method="post" enctype="multipart/form-data">
+                    <label for="arquivos">Escolha um arquivo</label>
+                    <input type="file"  id="arquivo" name="arquivo" accept=".pdf,.docs,.doc,.mp3,.mp4,.jpeg,.png,.jpg">
+                    <input type="submit" value="Enviar">
+                </form>
+            
+            <p style="margin-bottom: 0px; border-radius: 10px 10px 0px 0px;">
+                Caixa de entrada para avaliação:
+            </p>
+            <div class="estrelas">
+                <label for="cm_star-1"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                <label for="cm_star-2"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                <label for="cm_star-3"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                <label for="cm_star-4"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-5" name="fb" value="5"/>
+            </div>
+            
+        </center>
+        <br>
+        <br>
+        <p>Estado 
+            <select name="Estado" id="Estado">
+                <option value="SP">São paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espirito Santo</option>
+            </select>
+        </p>
+    </body>
+</html>

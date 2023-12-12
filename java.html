@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos JavaScript</title>
+    <link rel="stylesheet" href="conexao-style.css">
+    <link rel="icon" type="image/png"  href="src/favicon/favicon.ico">
+    <!--Conexão do JavaScript dentro do html-->
+    <script src="script.js"></script>
+</head>
+<body>
+    <ul id="menu">
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="links.html">Links</a></li>
+        <li class="item"><a href="inputs.html">Formulário</a></li>  
+        <li class="item"><a href="listastabela.html">Listas e Tabelas</a></li>
+        <li class="item"><a href="linhas-e-paragrafos.html">Linhas e Parágrafos</a></li>
+        <li class="item"><a href="conexao.html">Conexao CSS</a></li>
+        <li class="item"><a href="java.html">Java Script</a></li>
+        <li class="item"><a href="sobre.html">Sobre</a></li>
+    </ul>
+    <h1>JavaScript no desenvolvimento WEB</h1>
+    <p>JavaScript permite criar interfaces de usuário interativas. Páginas web podem responder a ações do usuário, como cliques, movimentos do mouse, preenchimento de formulários, etc., sem a necessidade de recarregar a página.</p>
+    <h1>DOM - Document Object Model</h1>
+    <p>Criado automaticamente pelo navegador ao carregar a página,e assim podemos manipular os elementos criados no HTML. O JavaScript permite a manipulação dinâmica do DOM, que representa a estrutura hierárquica de elementos HTML na página. Isso possibilita adicionar, remover ou modificar elementos e atributos na página em tempo real.</p>
+    <h1>CONEXÃO</h1>
+    <p>AS conexoes podem ser do tipo: </p>
+    <p><b>Externas:</b> onde e criado um documento externo com a extensao .js e linkado no html atraves da tag &lt;script&gt; e um atributo src onde e colocado o endereço do doc .js</p>
+    <p><b>Interna:</b>E criado dentro do documento html , com a abertura da tag &lt;script&gt; dentro das tags head ou body</p>
+
+    <h1>Variaveis</h1>
+    <p>Variavel sao valores predefinidos e O valor que você coloca em uma variável é que vai determinar o tipo da variável. Por exemplo, se jogar um número em uma variável ela vai ser do tipo número. Se na sequência você jogar uma string na mesma variável ela passará a ser string  </p>
+    <p>Exemplo de como criar uma variável em java:
+        <br>
+    var minhaVariavel = "Olá, mundo!";
+    E para realizar a impressão no console, utilizamo o comando console.log(minhaVariavel);
+    <br>
+    Todo comando deve terminar com ; ao final.
+    Adicionar as regras de nomeação da variável.
+    </p>
+    <h1>Tipos de dados </h1>
+    <p>Toda a variável armazena uma informação, essa informação tem uma tipologia ou formato.
+    </p>
+    <table>
+        <tbody>
+            <th>Tipo Primitivo</th>
+            <th>Descrição</th>
+        </tbody>
+        <tr>
+            <td>Int</td>
+            <td>Valor numerico inteiro</td>
+        </tr>
+        <tr>
+            <td>Float/ Double</td>
+            <td>Valor numerico nao inteiro</td>
+        </tr>
+        <tr>
+            <td>Char</td>
+            <td>Armazena apenas um character</td>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>Armazena Palavras ou frases alphanumericos</td>
+        </tr>
+        <tr>
+            <td>Booleano</td>
+            <td>Armazena os valores true ou false</td>
+        </tr>
+    </table>
+    <h1>Formatando Strings</h1>
+    <p>JavaScript oferece uma variedade de funções para manipulação de strings. Aqui estão algumas das funções mais comuns:</p>
+    <table>
+        <tbody>
+            <th>Tag</th>
+            <th>Explicação</th>
+            <th>Exemplo</th>
+        </tbody>
+        <tr>
+            <td>length:</td>
+            <td>
+                Retorna o comprimento da string.
+                var minhaString = "Hello, World!";
+            </td>
+            <td>
+                console.log(minhaString.length); // Saída: 13
+            </td>
+        </tr>
+        <tr>
+            <td>charAt(index):</td>
+            <td>
+                Retorna o caractere na posição especificada.
+                var minhaString = "Hello";
+            </td>
+            <td>console.log(minhaString.charAt(0)); // Saída: "H"</td>
+        </tr>
+        <tr>
+            <td>concat(str1, str2, ..., strN):</td>
+            <td>
+                Concatena duas ou mais strings.
+                var str1 = "Hello";
+                var str2 = " ";
+                var str3 = "World";
+            </td>
+            <td>console.log(str1.concat(str2, str3)); // Saída: "Hello World"</td>
+        </tr>
+        <tr>
+            <td>indexOf(substring, start):</td>
+            <td>
+                Retorna o índice da primeira ocorrência da substring, começando a busca a partir do índice especificado.
+                var minhaString = "Hello, World!";
+            </td>
+            <td>console.log(minhaString.indexOf("World")); // Saída: 7</td>
+        </tr>
+        <tr>
+            <td>lastIndexOf(substring, start):</td>
+            <td>
+                Retorna o índice da última ocorrência da substring, começando a busca a partir do índice especificado.
+                var minhaString = "Hello, World!";
+            </td>
+            <td>console.log(minhaString.lastIndexOf("o")); // Saída: 8</td>
+        </tr>
+        <tr>
+            <td>slice(start, end):</td>
+            <td>
+                Extrai uma parte da string entre os índices start e end (não incluindo end).
+                var minhaString = "Hello, World!";
+            </td>
+            <td>console.log(minhaString.slice(0, 5)); // Saída: "Hello"</td>
+        </tr>
+        <tr>
+            <td>substring(start, end):</td>
+            <td>
+                Similar a slice, extrai uma parte da string entre start e end.
+                var minhaString = "Hello, World!";
+            </td>
+            <td>console.log(minhaString.substring(7, 12)); // Saída: "World"</td>
+        </tr>
+        <tr>
+            <td>substr(start, length):</td>
+            <td>Extrai uma parte da string a partir de start com o comprimento especificado. var minhaString = "Hello, World!";</td>
+            <td>console.log(minhaString.substr(7, 5)); // Saída: "World"</td>
+        </tr>
+        <tr>
+            <td>replace(oldStr, newStr):</td>
+            <td>
+                Substitui a primeira ocorrência de oldStr por newStr
+                var minhaString = "Hello, World!";
+            </td>
+            <td>console.log(minhaString.replace("Hello", "Hi")); // Saída: "Hi, World!"</td>
+        </tr>
+        <tr>
+            <td>toUpperCase() e toLowerCase():</td>
+            <td>var minhaString = "Hello, World!";</td>
+            <td>
+                console.log(minhaString.toUpperCase()); // Saída: "HELLO, WORLD!"
+                console.log(minhaString.toLowerCase()); // Saída: "hello, world!"
+            </td>
+        </tr>
+    </table>
+
+    <h1>Formatando Números</h1>
+    <p>
+        Para formatar as casas decimais dos números podemos utilizar toFixed():
+        O método toFixed() converte um número em uma string, mantendo um número específico de casas decimais.
+        var numero = 123.4567;
+        var numeroFormatado = numero.toFixed(2); // Duas casas decimais
+        console.log(numeroFormatado); // Saída: "123.46"
+    </p>
+    <h1>Operadores</h1>
+    <p>
+        Operadores são símbolos que permitem manipular as informações, e temos três tipos: artiméticos, lógicos e relacionais
+    </p>
+    <table>
+        <tbody>
+            <th>Valor logico</th>
+            <th>Simbolo</th>
+            <th>Valor Verdade</th>
+        </tbody>
+        <tr>
+            <td class="logico">AND</td>
+            <td class="logico">&&</td>
+            <td>Para ser verdade ambas premissas precisam ser verdade</td>
+        </tr>
+        <tr>
+            <td class="logico">OR</td>
+            <td class="logico">||</td>
+            <td>Para ser verdade apenas uma premissas precisam ser verdade</td>
+        </tr>
+        <tr>
+            <td class="logico">NOT</td>
+            <td class="logico">!</td>
+            <td>Inverte o valor verdade da premissa</td>
+        </tr>
+    </table>
+
+    <h1>Buscando os elementos HTML no JavaScript</h1>
+    <p>Para acessar os elementos HTML em JavaScript, você pode usar vários métodos, dependendo da forma como os elementos são identificados no HTML. Aqui estão alguns métodos comuns:</p>
+<table id="buscando">
+    <tbody>
+        <th>Tag</th>
+        <th >Explicação</th>
+        <th>Exemplo</th>
+    </tbody>
+    <tr>
+        <td>document.getElementById(id):</td>
+        <td>Este método retorna uma referência ao elemento que possui o ID especificado. javascript</td>
+        <td>var meuElemento = document.getElementById("meuId");</td>
+    </tr>
+    <tr>
+        <td>document.getElementsByClassName(className):</td>
+        <td>Este método retorna uma coleção de elementos que possuem a classe CSS especificada.</td>
+        <td>var meusElementos = document.getElementsByClassName ("minhaClasse");</td>
+    </tr>
+    <tr>
+        <td>document.getElementsByTagName(tagName):</td>
+        <td>Este método retorna uma coleção de elementos com o nome da tag HTML especificada. javascript</td>
+        <td>var minhasTags = document.getElementsByTagName("p");</td>
+    </tr>
+    <tr>
+        <td>document.querySelector(selector):</td>
+        <td>Este método retorna o primeiro elemento que corresponde ao seletor CSS especificado.</td>
+        <td>var meuElemento = document.querySelector("#meuId");</td>
+    </tr>
+</table>
+   
+        <center>
+            <div id="calc">
+                <div class="calculadora">
+                    <div id="caixa1"><input type="number" id="numero1" placeholder="Numero 1" style="width: 100px;height: 25px;"></div>
+                    <div id="caixa2"><input type="number" id="numero2" placeholder="Numero 2" style="width: 100px;height: 25px;"></div>
+                    <div id="aparelho"><img src="src/imagens/14063.png" alt=""></div>
+                    <div id="operador"><p id="op"></p></div>
+                    <div id="plus"><button onclick="calcular('soma')"><img class="botao" src="src/imagens/botao mais.png" alt=""></button></div>
+                    <div id="less"><button onclick="calcular('subtracao')"><img src="src/imagens/botao de menos.png" class="botao" alt=""></button></div>
+                    <div id="mult"><button onclick="calcular('multiplicacao')"><img class="botao" src="src/imagens/botao de multiplicacao.jpg" alt=""></button></div>
+                    <div id="divi"><button onclick="calcular('divisao')"><img class="botao" src="src/imagens/botao de divisao.png" alt=""></button></div>
+                    <div id="result"><p id="resultado">Resultado:</p></div>
+                </div>
+            </div>
+        </center>
+        <h1>Acendendo a luz</h1>
+        <br>
+        <p>
+            Este feito foi gerado por meio da funcionalidade do JavaScript
+        </p>
+        <br>
+        <center>
+            <img id="luz" src="src/imagens/luzApagada.jpg" alt="Luz Apagada" onmouseover="ligarLuz()" onmouseout="apagarLuz()">
+        </center>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"  href="src/favicon/favicon.ico">
+    <link rel="stylesheet" href="conexao-style.css">
+    <title>Linhas e Parágrafos</title>
+</head>
+<body>
+    <ul id="menu">
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="links.html">Links</a></li>
+        <li class="item"><a href="inputs.html">Formulário</a></li>  
+        <li class="item"><a href="listastabela.html">Listas e Tabelas</a></li>
+        <li class="item"><a href="linhas-e-paragrafos.html">Linhas e Parágrafos</a></li>
+        <li class="item"><a href="conexao.html">Conexao CSS</a></li>
+        <li class="item"><a href="java.html">Java Script</a></li>
+        <li class="item"><a href="sobre.html">Sobre</a></li>
+    </ul>
+    <h1>Alinhamento de Parágrafos</h1>
+    <br>
+    <p>
+        O alinhamento dos parágrafos é parte importante para organizar e deixar nosso site visualmente agradável. O alinhamento pode ser passado como parâmetro para uma tag div ou uma tag p, com o atributo align,o atributo align pode ter os parâmetros center, right, justify e left. <b>Center</b>: Centraliza o texto, <b>right</b>: ajusta pela margem direita, <b>left</b>:ajusta pela margem esquerda e <b>justify</b>:ajusta pelas duas margens. Na ausência de definição do atributo align, o padrão será sempre left.
+    </p>
+    <h2>Exemplo de alinhamento à esquerda:</h2>
+    <div style="position: absolute; transform: translate(-5%, -5%);"  >
+        <p style="text-align: left;">
+            Este curso tem por objetivo o desenvolvimento de competências para o desenvolvimento de páginas para internet e aplicação de técnicas de lógica de programação por meio de projetos práticos com as tecnologias HTML, CSS e javascript.Os processos de ensino e de aprendizagem deverão ser desenvolvidos com a utilização de diferentes métodos, estratégias e técnicas, tendo em vista a aquisição de capacidades técnicas, sociais, organizativas, metodológicas e conhecimentos definidos como conteúdo formativo e necessários para o desempenho profissional.
+        </p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h2>Exemplo de alinhamento à direita:</h2>
+    <div style="position: absolute;transform: translate(5%,5%);">
+        <p style="text-align: right;">
+            Este curso tem por objetivo o desenvolvimento de competências para o desenvolvimento de páginas para internet e aplicação de técnicas de lógica de programação por meio de projetos práticos com as tecnologias HTML, CSS e javascript.Os processos de ensino e de aprendizagem deverão ser desenvolvidos com a utilização de diferentes métodos, estratégias e técnicas, tendo em vista a aquisição de capacidades técnicas, sociais, organizativas, metodológicas e conhecimentos definidos como conteúdo formativo e necessários para o desempenho profissional.
+        </p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>Exemplo de alinhamento justificado:</h2>
+    <p style="text-align: justify;">
+        Este curso tem por objetivo o desenvolvimento de competências para o desenvolvimento de páginas para internet e aplicação de técnicas de lógica de programação por meio de projetos práticos com as tecnologias HTML, CSS e javascript.Os processos de ensino e de aprendizagem deverão ser desenvolvidos com a utilização de diferentes métodos, estratégias e técnicas, tendo em vista a aquisição de capacidades técnicas, sociais, organizativas, metodológicas e conhecimentos definidos como conteúdo formativo e necessários para o desempenho profissional.
+    </p>
+    <h2>Exemplo de alinhamento centro:</h2>
+    <p style="text-align: center;">
+        Este curso tem por objetivo o desenvolvimento de competências para o desenvolvimento de páginas para internet e aplicação de técnicas de lógica de programação por meio de projetos práticos com as tecnologias HTML, CSS e javascript.Os processos de ensino e de aprendizagem deverão ser desenvolvidos com a utilização de diferentes métodos, estratégias e técnicas, tendo em vista a aquisição de capacidades técnicas, sociais, organizativas, metodológicas e conhecimentos definidos como conteúdo formativo e necessários para o desempenho profissional.
+    </p>
+    <h1>Linhas</h1>
+    <p>As linhas criadas pela tag <b>hr</b> são utilizadas tanto para a estilização, quanto para a organização de um site. E como todo objeto dentro de um página web também possui atributos que colaboram para sua estilização.
+    </p>
+    <h3>Linha convencional:</h3>
+    <br>
+    <hr>
+    <br>
+    <h3>Linha com alteração de tamanho e cor</h3>
+    <br>
+    <hr align="center" width="50%" color="red">
+    <br>
+    <p>Na linha acima foi utilizado o atributo width com parâmetro 50%, assim ele dimensinou a linha para 50% da largura da nossa página. Para alteração de cores, utilize o atributo color, atribuindo o parâmetros de cor pelo nome, ou pelo código hexadecimal.
+    </p>
+    <br>
+    <h3>Centralização das linhas</h3>
+    <br>
+    <p>
+        Posicionando à esquerda atributo align = left
+    </p>
+    <hr align="left" color="red" width="30%">
+    <br>
+    <p align="right">
+        Posicionando à direita atributo align = right
+    </p>
+    <hr align="right" width="30%" color="red">
+    <br>
+    <p align="center">
+        Posicionando ao centro atributo align = center
+    </p>
+    <hr align="center" width="30%" color="red">
+    <br>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png"  href="src/favicon/favicon.ico">
+        <link rel="stylesheet" href="conexao-style.css">
+        <title>Interação com links</title>
+    </head>
+    <body>
+        <ul id="menu">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="links.html">Links</a></li>
+            <li class="item"><a href="inputs.html">Formulário</a></li>  
+            <li class="item"><a href="listastabela.html">Listas e Tabelas</a></li>
+            <li class="item"><a href="linhas-e-paragrafos.html">Linhas e Parágrafos</a></li>
+            <li class="item"><a href="conexao.html">Conexao CSS</a></li>
+            <li class="item"><a href="java.html">Java Script</a></li>
+            <li class="item"><a href="sobre.html">Sobre</a></li>
+        </ul>
+        <center>
+            <h1>Conceito de links</h1>
+            <p>
+                Os links são utilizados para conectar páginas web. Para isso utilizamos a tag &lt a &gt chamada de  âncora. Os atributos que precisamos configurar na tag âncora: <b>href:</b> para iserirmos a url a ser carregada e <b>target:</b>para indicarmos se a nova página abrirá na mesma janela ou em janela diferente
+            </p>
+            <br>
+            <br>
+            <p>
+                <b>target=</b>_blank(abre em outra guia)
+            </p>
+            <p>
+                <b>target=</b>_self(abre na guia atual)
+            </p>
+            <p>
+                Quando <b>não</b> colocamos o atributo <b>target</b> o padrão self é aplicado, e a página é aberta na janela atual
+            </p>
+            <h5> Veja um exemplo:</h5>
+            <h4>
+                Conheça a unidade do SENAI onde eu estudo:
+            </h4>
+                <a href="https://sp.senai.br/unidade/paulinia/" target="_blank"><img src="src/imagens/senai.jpeg" alt="Frente do senai de paulinia" width="550" height="550"></a>
+            <p>
+                Click no link abaixo e abra a página SENAI Paulinia em outra janela.
+            </p>
+                <a id="link" href="https://sp.senai.br/unidade/paulinia/" target="_blank" > Acesse SENAI Paulinia </a>
+            <p>
+                Click no link abaixo e abra a página de Cursos do SENAI Paulinia nesta janela.
+            </p>
+            <a id="link" href="https://sp.senai.br/cursos/0/0?cidadeint=paulinia&pag=1" target="_self"> Acesse Cursos SENAI Paulinia </a>
+            <h1>Conceito de incorporação de videos</h1>
+            <br>
+            <p>
+                Similar a incorporar uma imagem à página web, a incorporação de videos é a ideia de inserir um video em sua página Web que possa ser visto no navegador.
+            </p>
+            <br>
+            <p>
+                Temos duas forms de incorporação,pela tag <b>video</b> e pela tag <b>iframe</b>. O primeiro video abaixo foi incoporado pela tag video, sendo que ele está armazenado <b>localmente</b> no diretório de nosso projeto. Já o segundo vídeo foi incorporado pela tag de incorporação fornecida no compartilhamento de videos no YouTube
+            </p>
+            <h3>Veja como foi a inaulguração do SENAI Paulinia!</h3>
+            <video src="src/video/inauguracaoSENAI.mp4" width="650" height="450" type="video/mp4" controls></video>
+            <br>
+            <h3>O que e o SENAI?Veja no vídeo a seguir:</h3>
+            <br>
+            <iframe width="650" height="450" src="https://www.youtube.com/embed/1hbzT3T1Vcs?si=siVr1ukl-DKV0XBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <br> 
+        </center>
+        <center>
+            <div>
+                <button>Página Inicial</button>
+                <button>Entrada de Dados</button>
+            </div>
+        </center>
+    </body>
+</html>
+
+ 

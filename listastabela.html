@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"  href="src/favicon/favicon.ico">
+    <link rel="stylesheet" href="conexao-style.css">
+    <title>Listas e Tabelas</title>   
+</head>
+<body>
+    <ul id="menu">
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="links.html">Links</a></li>
+        <li class="item"><a href="inputs.html">Formulário</a></li>  
+        <li class="item"><a href="listastabela.html">Listas e Tabelas</a></li>
+        <li class="item"><a href="linhas-e-paragrafos.html">Linhas e Parágrafos</a></li>
+        <li class="item"><a href="conexao.html">Conexao CSS</a></li>
+        <li class="item"><a href="java.html">Java Script</a></li>
+        <li class="item"><a href="sobre.html">Sobre</a></li>
+    </ul>
+    <center>
+        <h1>Listas</h1>
+        <img src="src/imagens/lista.jpg"  alt="Imagem de uma lista" width="450" height="300">
+    </center>  
+    <p>
+        Assim como os cabeçahos, que separam partes do texto, outra forma de estruturar um documento html é a utilização de listas. 
+    </p>
+    <p>
+        As listas podem funcionar como um sumário, um menu ou um resumo do conteúdo do documento. Existem dois tipos de listas <b>não-ordenadas</b> e <b>ordenadas</b>. 
+    </p>
+    <hr>
+    <h2>Listas não ordenadas</h2>
+    <p>
+        As listas não ordenadas contém uma série de itens sem numerá-los. Para criá-la usamos a tag ul, e dentro da tag ul criamos para cada item da lista uma tag li. Utilizamos esta tag para exibir uma lista de alguns cursos que de TI que temos no SENAI Paulínia, como resultado teremos a lista abaixo:
+    </p>
+    <ul>
+        <li>Programação Java Fundamentals Oracle</li>
+        <li>Programação Java Foundations Oracle</li>
+        <li>Programação Python</li>
+        <li>Desenvolvimento de Páginas Web</li>
+        <li>Montagem e Manutenção de Computador</li>
+        <li>Microsoft AI-900 - Fundamentos da IA</li>
+        <li>Microsoft DP-900 - Fundamento de análise dados</li>
+        <li>Microsoft Power Bi</li>
+    </ul>
+    <hr>
+    <h2>Listas ordenadas</h2>
+    <p>
+        As listas ordenadas contém uma série de itens numerados. Para criá-la usamos a tag ol, e dentro da tag ol criamos para cada item da lista uma tag li. Utilizamos esta tag para exibir uma lista de alguns cursos que de TI que temos no SENAI Paulínia, como resultado teremos a lista ordenada abaixo:
+    </p>
+    <ol>
+        <li>Programação Java Fundamentals Oracle</li>
+        <li>Programação Java Foundations Oracle</li>
+        <li>Programação Python</li>
+        <li>Desenvolvimento de Páginas Web</li>
+        <li>Montagem e Manutenção de Computador</li>
+        <li>Microsoft AI-900 - Fundamentos da IA</li>
+        <li>Microsoft DP-900 - Fundamento de análise dados</li>
+        <li>Microsoft Power Bi</li>
+    </ol>
+    <hr>
+    <h1>Tabelas</h1>
+    <center>
+        <img src="src/imagens/tabelas.jpg" alt="imagem de tabelas" width="450" height="300">
+    </center>  
+    <p>
+        As tabelas são estruturas que organizam as informações em <b>linhas</b> e <b>colunas</b>. Para criar uma tabela, utilizamos a tag table que deverá conter toda a estrutura da tabela. Para a compor nossa tabela temos de criar a estrutura de linha e coluna. 
+    </p>
+    <h3>Linha</h3>
+    <p>
+        Para criar a tag de referência de linha dentro de uma tabela devemos inserir a tag tr que é a tag que cria linhas.
+    </p>
+    <hr>
+    <h3>Coluna</h3>
+    <p>
+        Para criar a tag de referência de coluna dentro de uma tabela devemos inserir a tag td que é a tag que cria colunas.
+    </p>
+    <hr>
+    <h3>Exemplo da Tabela com o nome dos alunos do curso e o projeto que desenvolverão:</h3>
+    <table>
+        <tbody>
+            <th>Aluno</th>
+            <th>Projeto Final</th>
+        </tbody>
+        <tr>
+            <td>Carlos Serra</td>
+            <td>Site Loja de Pipas</td>
+        </tr>
+        <tr>
+            <td>Henry Perissinotti</td>
+            <td>Site Pesqueiro</td>
+        </tr>
+        <tr>
+            <td>Kelly Brito</td>
+            <td>Site Pousada</td>
+        </tr>
+        <tr>
+            <td>Vitor Salgado</td>
+            <td>Site da Loja de Acessórios</td>
+        </tr>
+    </table>
+</body>
+</html>
